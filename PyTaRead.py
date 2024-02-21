@@ -28,6 +28,8 @@ class ServiceList():
 
 
 
+
+
 def checkServices():
 
 
@@ -61,17 +63,15 @@ def checkServices():
     print("would you like to save any of the services to the white list? if yes ENTER: the PID of the service if no ENTER: N")
     a = input()
 
-    if(a.lower != 'n'):
-        for service in systemservices:
-            if(str(service.pid) == str(a)):
-                
+    #if(a.lower != 'n'):
+    #    for service in systemservices:
+    #        if(str(service.pid) == str(a)):
 
-
-print("press [C] to run check \n[B] to edit blacklist \n[W] to edit Whitelist \n[N] to edit known service list")
-a = input()
+    print("press [C] to run check \n[B] to edit blacklist \n[W] to edit Whitelist \n[N] to edit known service list")
+    a = input()
 
 
 
-if(a.lower() == 'c'):
-    checkServices()
+    if(a.lower() == 'c'):
+        checkServices()
 
